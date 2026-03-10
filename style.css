@@ -982,26 +982,72 @@
     .gallery-item:nth-child(1) { grid-column: span 2; }
     .gallery-item:nth-child(5) { grid-column: span 1; }
     .testi-card { min-width: calc(50% - 12px); }
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
   }
   @media (max-width: 768px) {
     .nav-links { display: none; }
     .hamburger { display: flex; }
-    section { padding: 70px 5%; }
+    section { padding: 60px 5%; }
     .services-header { flex-direction: column; align-items: flex-start; }
+    .services-grid { grid-template-columns: 1fr 1fr; gap: 2px; }
     .form-row { grid-template-columns: 1fr; }
     .footer-main { grid-template-columns: 1fr; gap: 36px; }
     .hero-stats { display: none; }
-    .testi-card { min-width: calc(100% - 0px); }
+    .hero-scroll { display: none; }
+    .testi-card { min-width: 100%; }
     .gallery-grid { grid-template-columns: 1fr 1fr; }
+    .gallery-item:nth-child(1) { grid-column: span 2; }
     .booking-form { padding: 28px 20px; }
     .contact-form { padding: 28px 20px; }
-    .hero-title { font-size: 3rem; }
-  }
-  @media (max-width: 480px) {
-    .gallery-grid { grid-template-columns: 1fr; }
-    .gallery-item:nth-child(1), .gallery-item:nth-child(5) { grid-column: span 1; }
+    .hero-title { font-size: 2.6rem; }
+    .hero-content { margin-top: 100px; padding-bottom: 60px; }
+    .hero-btns { flex-direction: column; gap: 10px; }
+    .hero-btns a { text-align: center; justify-content: center; }
+    .hero-scissors { display: none; }
     .about-badge { width: 90px; height: 90px; bottom: -16px; right: -8px; }
     .about-badge strong { font-size: 1.4rem; }
+    .about-feat { padding: 14px; }
+    .section-title { font-size: 1.9rem; }
+    .service-card { padding: 28px 20px; }
+    .booking-form { padding: 24px 18px; }
+    .footer-main { padding: 50px 5% 36px; }
+    .footer-brand p { display: none; }
+    .marquee-wrap { display: none; }
+    #quick-banner { padding: 60px 5%; }
+    .banner-btns { flex-direction: column; align-items: center; }
+    .testi-track { gap: 0; }
+    .modal-box-inner { padding: 28px 20px !important; }
+  }
+  @media (max-width: 480px) {
+    section { padding: 50px 5%; }
+    .gallery-grid { grid-template-columns: 1fr; }
+    .gallery-item:nth-child(1),
+    .gallery-item:nth-child(5) { grid-column: span 1; }
+    .gallery-placeholder { min-height: 160px !important; }
+    .services-grid { grid-template-columns: 1fr; }
+    .hero-title { font-size: 2.2rem; }
+    .hero-tagline { font-size: 1rem; }
+    .hero-desc { font-size: 0.85rem; }
+    .hero-eyebrow span { font-size: 9px; letter-spacing: 2px; }
+    .nav-logo span:first-child { font-size: 1rem; }
+    #navbar img { height: 70px !important; }
+    .booking-form, .contact-form { padding: 20px 14px; }
+    .footer-main { grid-template-columns: 1fr; }
+    .about-grid { gap: 40px; }
+    .about-img-main { height: 280px; }
+    #serviceModal > div {
+      padding: 28px 18px !important;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+    .amb-name { font-size: 1.2rem; }
+    .testi-card { padding: 24px 18px; }
+    .contact-item { padding: 14px; gap: 12px; }
+    .contact-icon { width: 34px; height: 34px; font-size: 0.8rem; }
+    .footer-socials { flex-wrap: wrap; }
+    #quick-banner h2 { font-size: 1.5rem; }
+    .booking-detail-item { padding: 12px; }
+    .form-title { font-size: 1.2rem; }
   }
 /* ─── SERVICE MODAL ─── */
 @keyframes modalIn {
@@ -1009,7 +1055,24 @@
   to   { opacity: 1; transform: scale(1) translateY(0); }
 }
 #serviceModal { cursor: pointer; }
-#modalBox { cursor: default; }
+#modalBox {
+  cursor: default;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+@media (max-width: 768px) {
+  #modalBox {
+    padding: 32px 22px !important;
+    margin: 10px;
+    max-height: 88vh;
+  }
+}
+@media (max-width: 480px) {
+  #modalBox {
+    padding: 24px 16px !important;
+    max-height: 85vh;
+  }
+}
 #modalList li {
   display: flex;
   align-items: flex-start;
@@ -1030,14 +1093,28 @@
 /* ─── COURSE SECTION RESPONSIVE ─── */
 #course { padding: 100px 5%; }
 @media (max-width: 1024px) {
-  #course > div:nth-child(2) {
+  #course > div:last-child {
     grid-template-columns: 1fr !important;
     gap: 40px !important;
   }
 }
 @media (max-width: 768px) {
-  #course > div:first-child + div > div:first-child > div:first-child {
+  #course { padding: 60px 5% !important; }
+  #course > div:last-child {
+    grid-template-columns: 1fr !important;
+  }
+  #course > div:last-child > div:first-child > div:first-child {
     grid-template-columns: 1fr 1fr !important;
+  }
+}
+@media (max-width: 480px) {
+  #course { padding: 50px 5% !important; }
+  #course > div:last-child > div:first-child > div:first-child {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px !important;
+  }
+  #course > div:last-child > div:last-child {
+    padding: 24px 16px !important;
   }
 }
 

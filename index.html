@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Hairport Salon – Where Style Takes Flight. Premium hair & beauty salon in Durgapur offering haircuts, styling, coloring, spa treatments, bridal grooming, and more.">
+<title>Hairport Salon | Where Style Takes Flight</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#" class="nav-logo" style="display:flex;align-items:center;gap:10px;">
+    <img src="images/logo.jpg" alt="Hairport Salon Logo" style="height:110px;width:auto;object-fit:contain;filter:drop-shadow(0 0 12px rgba(201,168,76,0.25));">
+    <div style="display:flex;flex-direction:column;">
+      <span style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;letter-spacing:1px;color:#fff;">Hairport Salon</span>
+      <span style="font-size:8px;letter-spacing:3px;text-transform:uppercase;color:#C9A84C;margin-top:-2px;">Where Style Takes Flight</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#course">Courses</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#booking" class="nav-cta">Book Now</a></li>
+  </ul>
+  <div class="hamburger" onclick="openMobileMenu()" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="closeMobileMenu()" aria-label="Close menu">
+    <i class="fas fa-times"></i>
+  </button>
+  <a href="#about" onclick="closeMobileMenu()">About</a>
+  <a href="#services" onclick="closeMobileMenu()">Services</a>
+  <a href="#gallery" onclick="closeMobileMenu()">Gallery</a>
+  <a href="#testimonials" onclick="closeMobileMenu()">Reviews</a>
+  <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+  <a href="#booking" onclick="closeMobileMenu()" style="color:var(--gold)">Book Now</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-scissors">✂</div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <span>Premium Beauty & Grooming</span>
+    </div>
+    <h1 class="hero-title">
+      Hair<em>port</em><br>Salon
+    </h1>
+    <p class="hero-tagline">Where Style Takes Flight</p>
+    <p class="hero-desc">
+      Experience luxury grooming and beauty services crafted by master stylists. We transform looks and elevate confidence — one cut, one colour, one client at a time.
+    </p>
+    <div class="hero-btns">
+      <a href="#booking" class="btn-primary"><i class="fas fa-calendar-alt"></i> Book Appointment</a>
+      <a href="tel:+918158966616" class="btn-outline"><i class="fas fa-phone"></i> Call Now</a>
+      <a href="#services" class="btn-gold-outline"><i class="fas fa-cut"></i> View Services</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <strong>500+</strong>
+      <span>Happy Clients</span>
+    </div>
+    <div class="hero-stat">
+      <strong>8+</strong>
+      <span>Expert Stylists</span>
+    </div>
+    <div class="hero-stat">
+      <strong>5★</strong>
+      <span>Rated Salon</span>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track" id="marqueeTrack">
+    <div class="marquee-item">Haircuts & Styling</div>
+    <div class="marquee-item">Hair Coloring</div>
+    <div class="marquee-item">Bridal Grooming</div>
+    <div class="marquee-item">Hair Spa & Treatments</div>
+    <div class="marquee-item">Facial & Skin Care</div>
+    <div class="marquee-item">Beard Grooming</div>
+    <div class="marquee-item">Makeup Services</div>
+    <div class="marquee-item">Waxing & Beauty</div>
+    <div class="marquee-item">Haircuts & Styling</div>
+    <div class="marquee-item">Hair Coloring</div>
+    <div class="marquee-item">Bridal Grooming</div>
+    <div class="marquee-item">Hair Spa & Treatments</div>
+    <div class="marquee-item">Facial & Skin Care</div>
+    <div class="marquee-item">Beard Grooming</div>
+    <div class="marquee-item">Makeup Services</div>
+    <div class="marquee-item">Waxing & Beauty</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-image-wrap reveal">
+      <div class="about-ambassador-wrap">
+        <img src="images/ambassador.png" alt="Hairport Salon Brand Ambassador" class="about-img-main" style="width:100%;height:560px;object-fit:cover;object-position:center top;border-radius:4px;filter:brightness(0.92) contrast(1.05);transition:filter 0.4s ease,transform 0.5s ease;">
+        <div class="about-ambassador-overlay">
+          <div class="about-ambassador-label">
+            <span class="amb-tag">✦ Brand Ambassador</span>
+            <span class="amb-name">Hairport Salon</span>
+            <span class="amb-sub">Where Style Takes Flight</span>
+          </div>
+        </div>
+      </div>
+      </div><!-- end ambassador-wrap -->
+      <div class="about-badge">
+        <strong>5★</strong>
+        <span>Rated</span>
+      </div>
+    </div>
+    <div class="about-content reveal">
+      <div class="gold-line">
+        <span></span>
+        <p>Our Story</p>
+        <span></span>
+      </div>
+      <h2 class="section-title">Crafting Beauty,<br><em style="font-style:italic; color:var(--gold)">One Strand at a Time</em></h2>
+      <p class="section-sub">At Hairport Salon, we believe that great hair is more than a look — it's a feeling. Our team of dedicated professionals combines artistry with technique to deliver transformative results in a serene, luxurious environment.</p>
+      <div class="about-features">
+        <div class="about-feat">
+          <i class="fas fa-user-tie about-feat-icon"></i>
+          <div>
+            <h4>Expert Professional Stylists</h4>
+            <p>Our certified stylists stay ahead of trends with continuous training, bringing global techniques to every appointment.</p>
+          </div>
+        </div>
+        <div class="about-feat">
+          <i class="fas fa-spa about-feat-icon"></i>
+          <div>
+            <h4>Modern Salon Environment</h4>
+            <p>A thoughtfully designed space that balances comfort and contemporary style — your sanctuary of beauty awaits.</p>
+          </div>
+        </div>
+        <div class="about-feat">
+          <i class="fas fa-award about-feat-icon"></i>
+          <div>
+            <h4>Commitment to Quality</h4>
+            <p>We use only premium, professional-grade products ensuring stunning, long-lasting results every time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE POPUP MODAL -->
+<div id="serviceModal" onclick="closeModal(event)" style="
+  display:none; position:fixed; inset:0; z-index:200;
+  background:rgba(0,0,0,0.75); backdrop-filter:blur(6px);
+  align-items:center; justify-content:center; padding:20px;">
+  <div id="modalBox" style="
+    background:#161616; border:1px solid rgba(201,168,76,0.3);
+    border-radius:8px; max-width:520px; width:100%;
+    padding:44px 40px; position:relative;
+    box-shadow:0 30px 80px rgba(0,0,0,0.6);
+    animation: modalIn 0.3s cubic-bezier(0.34,1.56,0.64,1);">
+    <!-- Gold top line -->
+    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#C9A84C,transparent);border-radius:8px 8px 0 0;"></div>
+    <!-- Close button -->
+    <button onclick="closeServiceModal()" style="
+      position:absolute; top:16px; right:16px;
+      background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1);
+      color:#888; width:34px; height:34px; border-radius:50%;
+      cursor:pointer; font-size:0.9rem; transition:all 0.2s;
+      display:flex; align-items:center; justify-content:center;"
+      onmouseover="this.style.background='rgba(201,168,76,0.15)';this.style.color='#C9A84C'"
+      onmouseout="this.style.background='rgba(255,255,255,0.06)';this.style.color='#888'">
+      <i class="fas fa-times"></i>
+    </button>
+    <!-- Icon -->
+    <div id="modalIcon" style="
+      width:58px; height:58px; border-radius:50%;
+      background:rgba(201,168,76,0.12); border:1px solid rgba(201,168,76,0.25);
+      display:flex; align-items:center; justify-content:center;
+      font-size:1.3rem; color:#C9A84C; margin-bottom:20px;"></div>
+    <!-- Title -->
+    <h3 id="modalTitle" style="font-family:'Playfair Display',serif;font-size:1.6rem;margin-bottom:6px;"></h3>
+    <div style="width:40px;height:1px;background:#C9A84C;margin-bottom:18px;"></div>
+    <!-- Description -->
+    <p id="modalDesc" style="color:rgba(255,255,255,0.65);font-size:0.9rem;line-height:1.85;margin-bottom:24px;"></p>
+    <!-- Includes -->
+    <div id="modalIncludes" style="margin-bottom:28px;">
+      <p style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#C9A84C;font-weight:600;margin-bottom:12px;">What's Included</p>
+      <ul id="modalList" style="list-style:none;display:flex;flex-direction:column;gap:9px;"></ul>
+    </div>
+    <!-- CTA -->
+    <button onclick="bookThisService()" id="modalBookBtn" style="
+      width:100%; background:#C9A84C; color:#0a0a0a;
+      border:none; padding:14px; font-family:'Poppins',sans-serif;
+      font-size:11px; font-weight:700; letter-spacing:2.5px;
+      text-transform:uppercase; cursor:pointer; border-radius:3px;
+      transition:all 0.3s; display:flex; align-items:center; justify-content:center; gap:10px;"
+      onmouseover="this.style.background='#E8C96A';this.style.transform='translateY(-2px)'"
+      onmouseout="this.style.background='#C9A84C';this.style.transform='translateY(0)'">
+      <i class="fas fa-calendar-check"></i> Book This Service
+    </button>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="services-header reveal">
+    <div>
+      <div class="gold-line">
+        <span></span><p>What We Offer</p><span></span>
+      </div>
+      <h2 class="section-title">Our Services</h2>
+    </div>
+    <p class="section-sub">From classic cuts to bridal transformations, every service is delivered with precision and passion.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal" onclick="openServiceModal(0)">
+      <div class="service-num">01</div>
+      <div class="service-icon"><i class="fas fa-cut"></i></div>
+      <h3>Haircuts & Styling</h3>
+      <p>Precision cuts and runway-inspired styling tailored to your face shape, lifestyle, and personality.</p>
+      <div class="service-arrow"><span>Explore</span><i class="fas fa-arrow-right"></i></div>
+    </div>
+    <div class="service-card reveal" onclick="openServiceModal(1)">
+      <div class="service-num">02</div>
+      <div class="service-icon"><i class="fas fa-palette"></i></div>
+      <h3>Hair Coloring & Highlights</h3>
+      <p>From balayage to bold vivids and subtle highlights — we deliver flawless color transformations.</p>
+      <div class="service-arrow"><span>Explore</span><i class="fas fa-arrow-right"></i></div>
+    </div>
+    <div class="service-card reveal" onclick="openServiceModal(2)">
+      <div class="service-num">03</div>
+      <div class="service-icon"><i class="fas fa-spa"></i></div>
+      <h3>Hair Spa & Treatments</h3>
+      <p>Nourishing spa therapies and advanced treatments that restore strength, shine, and vitality to your hair.</p>
+      <div class="service-arrow"><span>Explore</span><i class="fas fa-arrow-right"></i></div>
+    </div>
+    <div class="service-card reveal" onclick="openServiceModal(3)">
+      <div class="service-num">04</div>
+      <div class="service-icon"><i class="fas fa-user-tie"></i></div>
+      <h3>Beard Grooming</h3>
+      <p>Expert beard trimming, shaping, and styling to keep your look sharp, refined, and professionally groomed.</p>
+      <div class="service-arrow"><span>Explore</span><i class="fas fa-arrow-right"></i></div>
+    </div>
+    <div class="service-card reveal" onclick="openServiceModal(4)">
+      <div class="service-num">05</div>
+      <div class="service-icon"><i class="fas fa-star"></i></div>
+      <h3>Facial & Skin Care</h3>
+      <p>Rejuvenating facials and skin care rituals customised to your skin type for a radiant, healthy glow.</p>
+      <div class="service-arrow"><span>Explore</span><i class="fas fa-arrow-right"></i></div>
+    </div>
+    <div class="service-card reveal" onclick="openServiceModal(5)">
+      <div class="service-num">06</div>
+      <div class="service-icon"><i class="fas fa-magic"></i></div>
+      <h3>Makeup Services</h3>
+      <p>Flawless makeup artistry for every occasion — from natural day looks to glamorous evening transformations.</p>
+      <div class="service-arrow"><span>Explore</span><i class="fas fa-arrow-right"></i></div>
+    </div>
+    <div class="service-card reveal" onclick="openServiceModal(6)">
+      <div class="service-num">07</div>
+      <div class="service-icon"><i class="fas fa-heart"></i></div>
+      <h3>Bridal Grooming</h3>
+      <p>Comprehensive bridal packages ensuring you look and feel absolutely breathtaking on your most special day.</p>
+      <div class="service-arrow"><span>Explore</span><i class="fas fa-arrow-right"></i></div>
+    </div>
+    <div class="service-card reveal" onclick="openServiceModal(7)">
+      <div class="service-num">08</div>
+      <div class="service-icon"><i class="fas fa-leaf"></i></div>
+      <h3>Waxing & Beauty</h3>
+      <p>Smooth, lasting results with gentle waxing techniques and a full range of beauty treatments for every need.</p>
+      <div class="service-arrow"><span>Explore</span><i class="fas fa-arrow-right"></i></div>
+    </div>
+    <div class="service-card reveal" onclick="openServiceModal(8)">
+      <div class="service-num">09</div>
+      <div class="service-icon"><i class="fas fa-hand-sparkles"></i></div>
+      <h3>Bridal Mehendi</h3>
+      <p>Intricate and stunning mehendi designs crafted by expert artists to make your bridal look truly unforgettable.</p>
+      <div class="service-arrow"><span>Explore</span><i class="fas fa-arrow-right"></i></div>
+    </div>
+    <div class="service-card reveal" onclick="openServiceModal(9)">
+      <div class="service-num">10</div>
+      <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+      <h3>Nail Art</h3>
+      <p>Creative and elegant nail art designs — from minimalist styles to full glam — tailored to your personal aesthetic.</p>
+      <div class="service-arrow"><span>Explore</span><i class="fas fa-arrow-right"></i></div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking">
+  <div class="booking-grid">
+    <div class="booking-info reveal">
+      <div class="gold-line"><span></span><p>Reserve Your Visit</p><span></span></div>
+      <h2 class="section-title">Book Your<br><em style="font-style:italic;color:var(--gold)">Appointment</em></h2>
+      <p class="section-sub">Secure your spot with our expert stylists. We'll take care of the rest — just bring yourself.</p>
+      <div class="booking-detail">
+        <div class="booking-detail-item">
+          <i class="fas fa-clock"></i>
+          <span>Open Daily: 10:00 AM – 8:00 PM</span>
+        </div>
+        <div class="booking-detail-item">
+          <i class="fas fa-phone"></i>
+          <span>+91 8158966616</span>
+        </div>
+        <div class="booking-detail-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Diksha Apartment, More, near UCO Bank, Arrah Kalinagar, Arra, Durgapur, West Bengal 713212</span>
+        </div>
+        <div class="booking-detail-item">
+          <i class="fab fa-whatsapp"></i>
+          <span>Chat with us on WhatsApp for instant booking</span>
+        </div>
+      </div>
+    </div>
+    <div class="booking-form reveal" id="bookingFormWrapper">
+      <h3 class="form-title">Book an Appointment</h3>
+      <div id="formFields">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" id="bName" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" id="bPhone" placeholder="+91 XXXXX XXXXX" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" id="bEmail" placeholder="your@email.com">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Preferred Date *</label>
+            <input type="date" id="bDate" required>
+          </div>
+          <div class="form-group">
+            <label>Preferred Time *</label>
+            <input type="time" id="bTime" min="10:00" max="20:00" required value="10:00">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Select Service *</label>
+          <select id="bService" required>
+            <option value="" disabled selected>Choose a service</option>
+            <option>Haircuts & Styling</option>
+            <option>Hair Coloring & Highlights</option>
+            <option>Hair Spa & Treatments</option>
+            <option>Beard Grooming</option>
+            <option>Facial & Skin Care</option>
+            <option>Makeup Services</option>
+            <option>Bridal Grooming</option>
+            <option>Waxing & Beauty Treatments</option>
+            <option>Bridal Mehendi</option>
+            <option>Nail Art</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Additional Notes</label>
+          <textarea id="bNotes" placeholder="Any special requests or preferences..."></textarea>
+        </div>
+        <button class="form-submit" onclick="submitBooking()">
+          <i class="fas fa-calendar-check"></i> Confirm Appointment
+        </button>
+      </div>
+      <div class="form-success" id="formSuccess">
+        <i class="fas fa-check-circle"></i>
+        <h3>Appointment Requested!</h3>
+        <p>Thank you! We'll confirm your appointment via WhatsApp or phone call shortly. See you at Hairport Salon!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="gallery-header reveal">
+    <div class="gold-line" style="justify-content:center"><span></span><p>Our Work</p><span></span></div>
+    <h2 class="section-title">The Gallery</h2>
+    <p class="section-sub">A glimpse into our world of transformations, artistry, and beauty at its finest.</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item reveal">
+      <div class="gallery-placeholder" style="background:linear-gradient(135deg,#1a1a1a,#222,#181818)">
+        <i class="fas fa-camera" style="font-size:2.5rem;color:rgba(201,168,76,0.25)"></i>
+        <span>Hair Transformation</span>
+      </div>
+      <div class="gallery-overlay"><span>Signature Hair Transformation</span></div>
+    </div>
+    <div class="gallery-item reveal">
+      <div class="gallery-placeholder" style="background:linear-gradient(135deg,#181818,#202020)">
+        <i class="fas fa-cut" style="font-size:1.8rem;color:rgba(201,168,76,0.2)"></i>
+        <span>Precision Cut</span>
+      </div>
+      <div class="gallery-overlay"><span>Precision Cut & Style</span></div>
+    </div>
+    <div class="gallery-item reveal">
+      <div class="gallery-placeholder" style="background:linear-gradient(135deg,#1c1c1c,#242424)">
+        <i class="fas fa-palette" style="font-size:1.8rem;color:rgba(201,168,76,0.2)"></i>
+        <span>Color Work</span>
+      </div>
+      <div class="gallery-overlay"><span>Balayage Coloring</span></div>
+    </div>
+    <div class="gallery-item reveal">
+      <div class="gallery-placeholder" style="background:linear-gradient(135deg,#181818,#1e1e1e)">
+        <i class="fas fa-magic" style="font-size:1.8rem;color:rgba(201,168,76,0.2)"></i>
+        <span>Bridal Look</span>
+      </div>
+      <div class="gallery-overlay"><span>Bridal Styling</span></div>
+    </div>
+    <div class="gallery-item reveal">
+      <div class="gallery-placeholder" style="background:linear-gradient(135deg,#1a1a1a,#222)">
+        <i class="fas fa-spa" style="font-size:1.8rem;color:rgba(201,168,76,0.2)"></i>
+        <span>Spa Treatment</span>
+      </div>
+      <div class="gallery-overlay"><span>Hair Spa & Treatment</span></div>
+    </div>
+    <div class="gallery-item reveal">
+      <div class="gallery-placeholder" style="background:linear-gradient(135deg,#1c1c1c,#222)">
+        <i class="fas fa-star" style="font-size:1.8rem;color:rgba(201,168,76,0.2)"></i>
+        <span>Salon Interior</span>
+      </div>
+      <div class="gallery-overlay"><span>Our Salon Interior</span></div>
+    </div>
+    <div class="gallery-item reveal">
+      <div class="gallery-placeholder" style="background:linear-gradient(135deg,#181818,#202020)">
+        <i class="fas fa-user-tie" style="font-size:1.8rem;color:rgba(201,168,76,0.2)"></i>
+        <span>Men's Grooming</span>
+      </div>
+      <div class="gallery-overlay"><span>Men's Grooming</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="testimonials-header reveal">
+    <div class="gold-line" style="justify-content:center"><span></span><p>Client Stories</p><span></span></div>
+    <h2 class="section-title">What Our Clients Say</h2>
+    <p class="section-sub">Real experiences from our valued clients who trust us with their look.</p>
+  </div>
+  <div class="testi-slider reveal">
+    <div class="testi-track" id="testiTrack">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Absolutely the best salon experience I've had. The stylist understood exactly what I wanted and the result was better than I imagined. The ambiance is so relaxing and premium."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">P</div>
+          <div>
+            <span class="testi-name">Priya Sharma</span>
+            <span class="testi-role">Regular Client</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p>"I got my bridal hair and makeup done here and I couldn't have been happier. The team is incredibly skilled and professional. I felt like royalty on my big day!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar">R</div>
+          <div>
+            <span class="testi-name">Rupali Ghosh</span>
+            <span class="testi-role">Bridal Client</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p>"The beard grooming and haircut I got here was exceptional. Very clean, precise, and stylish. The staff is friendly and the place has a very upscale feel. Highly recommend!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar">A</div>
+          <div>
+            <span class="testi-name">Arjun Patel</span>
+            <span class="testi-role">Men's Grooming</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p>"The hair coloring and highlights turned out stunning! The color technician really knew what shades would complement my skin tone. Will definitely be coming back regularly."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">S</div>
+          <div>
+            <span class="testi-name">Sneha Roy</span>
+            <span class="testi-role">Color Client</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p>"The hair spa treatment completely transformed my damaged hair. It feels so soft and healthy now. The whole experience was so luxurious and the staff was wonderfully attentive."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">M</div>
+          <div>
+            <span class="testi-name">Meghna Das</span>
+            <span class="testi-role">Hair Spa Client</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Outstanding facial and skin treatment! My skin has never looked better. The professionals here are knowledgeable, gentle, and truly dedicated to their craft. Best in Durgapur!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar">D</div>
+          <div>
+            <span class="testi-name">Divya Bose</span>
+            <span class="testi-role">Skincare Client</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="testi-controls" id="testiDots"></div>
+  <div class="testi-arrows">
+    <button class="testi-arrow" onclick="slideTesti(-1)"><i class="fas fa-chevron-left"></i></button>
+    <button class="testi-arrow" onclick="slideTesti(1)"><i class="fas fa-chevron-right"></i></button>
+  </div>
+</section>
+
+<!-- QUICK BANNER -->
+<div id="quick-banner">
+  <div class="banner-content">
+    <h2>Need a quick <span>haircut or grooming</span> session today?</h2>
+    <p>Walk-ins welcome. Our expert stylists are ready to transform your look right now.</p>
+    <div class="banner-btns">
+      <a href="tel:+918158966616" class="btn-primary"><i class="fas fa-phone"></i> Call Now</a>
+      <a href="#booking" class="btn-gold-outline"><i class="fas fa-calendar-alt"></i> Book Appointment</a>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div style="text-align:center; margin-bottom:60px" class="reveal">
+    <div class="gold-line" style="justify-content:center"><span></span><p>Find Us</p><span></span></div>
+    <h2 class="section-title">Contact & Location</h2>
+    <p class="section-sub" style="margin:0 auto">We'd love to hear from you. Stop by, call, or send us a message anytime.</p>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <div class="contact-details">
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <strong>Our Address</strong>
+            <span>Diksha Apartment, More, near UCO Bank, Arrah Kalinagar, Arra, Durgapur, West Bengal 713212</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <strong>Phone Number</strong>
+            <span><a href="tel:+918158966616" style="color:var(--gold)">+91 8158966616</a></span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-clock"></i></div>
+          <div>
+            <strong>Opening Hours</strong>
+            <span>Daily: 10:00 AM – 8:00 PM</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+          <div>
+            <strong>WhatsApp</strong>
+            <span><a href="https://wa.me/918158966616" target="_blank" style="color:var(--gold)">Chat with us on WhatsApp</a></span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <strong>Email Us</strong>
+            <span><a href="mailto:hairportdgp@gmail.com" style="color:var(--gold)">hairportdgp@gmail.com</a></span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fab fa-instagram"></i></div>
+          <div>
+            <strong>Instagram</strong>
+            <span><a href="https://www.instagram.com/hairport.durgapur?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" style="color:var(--gold)">@hairport.durgapur</a></span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fab fa-facebook-f"></i></div>
+          <div>
+            <strong>Facebook</strong>
+            <span><a href="https://www.facebook.com/share/1BhXGf8mMe/" target="_blank" style="color:var(--gold)">Hairport Salon on Facebook</a></span>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:28px;">
+        <a href="https://maps.google.com/?q=Hairport+Salon+Diksha+Apartment+Arrah+Gram+Road+Arrah+Kalinagar+Durgapur+West+Bengal+713212" target="_blank" style="display:inline-flex;align-items:center;gap:8px;color:var(--gold);font-size:0.82rem;letter-spacing:1px;margin-bottom:10px;text-transform:uppercase;font-weight:500;">
+          <i class="fas fa-external-link-alt" style="font-size:0.7rem;"></i> Open in Google Maps
+        </a>
+        <div class="map-wrap">
+        <iframe
+          src="https://maps.google.com/maps?q=Hairport+Salon+Diksha+Apartment+Arrah+Gram+Road+Arrah+Kalinagar+Durgapur+West+Bengal+713212&output=embed&z=16"
+          width="100%" height="240" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      </div>
+    </div>
+    <div class="contact-form reveal">
+      <h3>Send Us a Message</h3>
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" id="cName" placeholder="Full name">
+      </div>
+      <div class="form-group">
+        <label>Phone / Email</label>
+        <input type="text" id="cContact" placeholder="Phone or email">
+      </div>
+      <div class="form-group">
+        <label>Subject</label>
+        <input type="text" id="cSubject" placeholder="What's on your mind?">
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea id="cMessage" style="height:130px" placeholder="Your message here..."></textarea>
+      </div>
+      <button class="form-submit" onclick="submitContact()" id="contactBtn">
+        <i class="fas fa-paper-plane"></i> Send Message
+      </button>
+      <p id="contactMsg" style="display:none;margin-top:14px;text-align:center;font-size:0.85rem;color:var(--gold)">
+        <i class="fas fa-check-circle"></i> Message sent! We'll be in touch shortly.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- BEAUTIFICATION COURSE -->
+<section id="course" style="background:var(--deep);position:relative;overflow:hidden;">
+  <div style="position:absolute;top:-100px;left:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(201,168,76,0.07) 0%,transparent 70%);pointer-events:none;"></div>
+  <div style="position:absolute;bottom:-100px;right:-100px;width:500px;height:500px;background:radial-gradient(circle,rgba(201,168,76,0.05) 0%,transparent 70%);pointer-events:none;"></div>
+  <div style="text-align:center;margin-bottom:60px;" class="reveal">
+    <div class="gold-line" style="justify-content:center"><span></span><p>Learn With Us</p><span></span></div>
+    <h2 class="section-title">Beautification Course<br><em style="font-style:italic;color:var(--gold)">For Freshers</em></h2>
+    <p class="section-sub" style="margin:0 auto;">Launch your career in beauty and grooming with our professional training programme. Learn from industry experts in a real salon environment.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;" class="reveal">
+    <!-- Left: Course highlights -->
+    <div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:36px;">
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:6px;padding:24px 20px;text-align:center;transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <i class="fas fa-cut" style="font-size:1.6rem;color:var(--gold);display:block;margin-bottom:10px;"></i>
+          <strong style="font-family:'Playfair Display',serif;display:block;margin-bottom:4px;font-size:1rem;">Hair Styling</strong>
+          <span style="font-size:0.78rem;color:var(--text-muted);">Cuts, blowouts & finishing</span>
+        </div>
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:6px;padding:24px 20px;text-align:center;transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <i class="fas fa-palette" style="font-size:1.6rem;color:var(--gold);display:block;margin-bottom:10px;"></i>
+          <strong style="font-family:'Playfair Display',serif;display:block;margin-bottom:4px;font-size:1rem;">Hair Coloring</strong>
+          <span style="font-size:0.78rem;color:var(--text-muted);">Color theory & application</span>
+        </div>
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:6px;padding:24px 20px;text-align:center;transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <i class="fas fa-magic" style="font-size:1.6rem;color:var(--gold);display:block;margin-bottom:10px;"></i>
+          <strong style="font-family:'Playfair Display',serif;display:block;margin-bottom:4px;font-size:1rem;">Makeup Artistry</strong>
+          <span style="font-size:0.78rem;color:var(--text-muted);">Day, evening & bridal looks</span>
+        </div>
+        <div style="background:var(--card);border:1px solid var(--border);border-radius:6px;padding:24px 20px;text-align:center;transition:transform 0.3s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='translateY(0)'">
+          <i class="fas fa-spa" style="font-size:1.6rem;color:var(--gold);display:block;margin-bottom:10px;"></i>
+          <strong style="font-family:'Playfair Display',serif;display:block;margin-bottom:4px;font-size:1rem;">Skin & Spa</strong>
+          <span style="font-size:0.78rem;color:var(--text-muted);">Facials, waxing & treatments</span>
+        </div>
+      </div>
+      <!-- What you get -->
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:6px;padding:28px;position:relative;">
+        <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);border-radius:6px 6px 0 0;"></div>
+        <p style="font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:16px;">What You'll Get</p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:12px;">
+          <li style="display:flex;align-items:center;gap:12px;font-size:0.87rem;color:rgba(255,255,255,0.75);"><span style="color:var(--gold);font-size:0.6rem;">✦</span> Hands-on practical training in a live salon</li>
+          <li style="display:flex;align-items:center;gap:12px;font-size:0.87rem;color:rgba(255,255,255,0.75);"><span style="color:var(--gold);font-size:0.6rem;">✦</span> Mentorship from certified professional stylists</li>
+          <li style="display:flex;align-items:center;gap:12px;font-size:0.87rem;color:rgba(255,255,255,0.75);"><span style="color:var(--gold);font-size:0.6rem;">✦</span> Certificate of completion from Hairport Salon</li>
+          <li style="display:flex;align-items:center;gap:12px;font-size:0.87rem;color:rgba(255,255,255,0.75);"><span style="color:var(--gold);font-size:0.6rem;">✦</span> Job placement assistance after course completion</li>
+          <li style="display:flex;align-items:center;gap:12px;font-size:0.87rem;color:rgba(255,255,255,0.75);"><span style="color:var(--gold);font-size:0.6rem;">✦</span> Flexible batch timings for freshers</li>
+          <li style="display:flex;align-items:center;gap:12px;font-size:0.87rem;color:rgba(255,255,255,0.75);"><span style="color:var(--gold);font-size:0.6rem;">✦</span> Professional kit & study material included</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Right: Enquiry card -->
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:6px;padding:40px 36px;position:relative;">
+      <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);border-radius:6px 6px 0 0;"></div>
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.5rem;margin-bottom:6px;">Enrol in the Course</h3>
+      <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:28px;line-height:1.7;">Interested in starting your beauty career? Reach out to us and we'll guide you through the next steps.</p>
+      <!-- Contact options -->
+      <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:28px;">
+        <a href="tel:+918158966616" style="display:flex;align-items:center;gap:16px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:4px;padding:16px 20px;transition:all 0.3s;text-decoration:none;" onmouseover="this.style.borderColor='var(--gold)';this.style.background='rgba(201,168,76,0.05)'" onmouseout="this.style.borderColor='rgba(201,168,76,0.2)';this.style.background='rgba(255,255,255,0.03)'">
+          <div style="width:40px;height:40px;border-radius:50%;background:rgba(201,168,76,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <i class="fas fa-phone" style="color:var(--gold);font-size:0.9rem;"></i>
+          </div>
+          <div>
+            <strong style="display:block;font-size:0.82rem;font-weight:600;margin-bottom:2px;">Call Us</strong>
+            <span style="font-size:0.88rem;color:var(--gold);">+91 8158966616</span>
+          </div>
+        </a>
+        <a href="mailto:hairportdgp@gmail.com" style="display:flex;align-items:center;gap:16px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:4px;padding:16px 20px;transition:all 0.3s;text-decoration:none;" onmouseover="this.style.borderColor='var(--gold)';this.style.background='rgba(201,168,76,0.05)'" onmouseout="this.style.borderColor='rgba(201,168,76,0.2)';this.style.background='rgba(255,255,255,0.03)'">
+          <div style="width:40px;height:40px;border-radius:50%;background:rgba(201,168,76,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <i class="fas fa-envelope" style="color:var(--gold);font-size:0.9rem;"></i>
+          </div>
+          <div>
+            <strong style="display:block;font-size:0.82rem;font-weight:600;margin-bottom:2px;">Email Us</strong>
+            <span style="font-size:0.88rem;color:var(--gold);">hairportdgp@gmail.com</span>
+          </div>
+        </a>
+        <a href="https://wa.me/918158966616?text=Hi%20Hairport%20Salon!%20I%20am%20interested%20in%20the%20Beautification%20Course%20for%20Freshers.%20Please%20share%20more%20details." target="_blank" style="display:flex;align-items:center;gap:16px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:4px;padding:16px 20px;transition:all 0.3s;text-decoration:none;" onmouseover="this.style.borderColor='#25D366';this.style.background='rgba(37,211,102,0.05)'" onmouseout="this.style.borderColor='rgba(201,168,76,0.2)';this.style.background='rgba(255,255,255,0.03)'">
+          <div style="width:40px;height:40px;border-radius:50%;background:rgba(37,211,102,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <i class="fab fa-whatsapp" style="color:#25D366;font-size:1rem;"></i>
+          </div>
+          <div>
+            <strong style="display:block;font-size:0.82rem;font-weight:600;margin-bottom:2px;">WhatsApp Enquiry</strong>
+            <span style="font-size:0.88rem;color:rgba(255,255,255,0.6);">Tap to send instant message</span>
+          </div>
+        </a>
+      </div>
+      <div style="border-top:1px solid var(--border);padding-top:20px;display:flex;align-items:center;gap:10px;">
+        <i class="fas fa-map-marker-alt" style="color:var(--gold);font-size:0.85rem;flex-shrink:0;"></i>
+        <span style="font-size:0.82rem;color:var(--text-muted);line-height:1.5;">Diksha Apartment, More, near UCO Bank, Arrah Kalinagar, Durgapur – 713212</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px;">
+        <img src="images/logo.jpg" alt="Hairport Salon" style="height:140px;width:auto;object-fit:contain;filter:drop-shadow(0 0 14px rgba(201,168,76,0.2));">
+        <div>
+          <span class="footer-logo-name" style="margin-bottom:2px;display:block;">Hairport Salon</span>
+          <span class="footer-logo-tag">Where Style Takes Flight</span>
+        </div>
+      </div>
+      <p>Your premier destination for luxury hair and beauty services in Durgapur. We're committed to elevating your style and confidence with every visit.</p>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/hairport.durgapur?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/1BhXGf8mMe/" target="_blank" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/918158966616" class="social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="mailto:hairportdgp@gmail.com" class="social-btn" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#course">Beauty Course</a></li>
+        <li><a href="#booking">Book Appointment</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul class="footer-links">
+        <li><a href="#services">Haircuts & Styling</a></li>
+        <li><a href="#services">Hair Coloring</a></li>
+        <li><a href="#services">Hair Spa</a></li>
+        <li><a href="#services">Beard Grooming</a></li>
+        <li><a href="#services">Facial & Skin Care</a></li>
+        <li><a href="#services">Bridal Grooming</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <ul class="footer-links">
+        <li><a href="tel:+918158966616"><i class="fas fa-phone" style="color:var(--gold);margin-right:6px;font-size:0.75rem;"></i>+91 8158966616</a></li>
+        <li><a href="mailto:hairportdgp@gmail.com"><i class="fas fa-envelope" style="color:var(--gold);margin-right:6px;font-size:0.75rem;"></i>hairportdgp@gmail.com</a></li>
+        <li><a href="https://wa.me/918158966616" target="_blank"><i class="fab fa-whatsapp" style="color:var(--gold);margin-right:6px;font-size:0.75rem;"></i>WhatsApp Us</a></li>
+        <li style="color:var(--text-muted);font-size:0.82rem;margin-top:4px;"><i class="fas fa-map-marker-alt" style="color:var(--gold);margin-right:6px;font-size:0.75rem;"></i>Arrah Kalinagar, Durgapur</li>
+      </ul>
+      <h4 style="margin-top:24px;">Opening Hours</h4>
+      <div class="footer-hours">
+        <div class="hour-item"><span>Monday</span><span>10 AM – 8 PM</span></div>
+        <div class="hour-item"><span>Tuesday</span><span>10 AM – 8 PM</span></div>
+        <div class="hour-item"><span>Wednesday</span><span>10 AM – 8 PM</span></div>
+        <div class="hour-item"><span>Thursday</span><span>10 AM – 8 PM</span></div>
+        <div class="hour-item"><span>Friday</span><span>10 AM – 8 PM</span></div>
+        <div class="hour-item"><span>Saturday</span><span>10 AM – 8 PM</span></div>
+        <div class="hour-item"><span>Sunday</span><span>10 AM – 8 PM</span></div>
+      </div>
+      <div class="hour-badge"><i class="fas fa-circle" style="color:#4caf50"></i> Open Today</div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 <span>Hairport Salon</span>. All rights reserved.</p>
+    <p>Designed with <span>♥</span> for beauty & style</p>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/918158966616" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+  <div class="whatsapp-pulse"></div>
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="script.js"></script>
